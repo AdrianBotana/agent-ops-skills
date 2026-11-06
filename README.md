@@ -33,6 +33,9 @@ npx skills add AdrianBotana/agent-ops-skills --skill server-ops-safety
 | `infra-audit-checklist` | Auditing an environment before touching it: third-party software, bots, cron jobs, credentials, public surface |
 | `service-retirement` | Retiring a service, project, unit, container or hostname without breaking what depends on it |
 | `agent-memory-and-context` | An agent must remember facts across sessions without bloating or losing them |
+| `watchdog-operations` | Writing, reviewing or debugging a watchdog, health-check timer or retry loop that restarts services |
+
+Seven skills, 301 rules, plus 19 reference files that load on demand.
 
 ## Who it is for
 
