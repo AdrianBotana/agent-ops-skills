@@ -34,7 +34,7 @@ system for a product that is not an agent runtime.
 
 **1. A new fact never goes into the always-on file — the semantic store extracts it.** The always-on block is re-read on every turn, so every line in it is paid for on every turn. Writing a fact there duplicates the store and grows the prompt for no benefit.
 Symptom: the always-on file creeps past its cap while the store stays empty.
-Do: `mem0_add(content='<one concise fact>')` once, and only for facts that are important and explicitly stated.
+Do: write the fact once into the semantic store, and only for facts that are important and explicitly stated.
 Do not: write the same fact into both layers.
 
 **2. The always-on file changes only to add a hard rule, and only while it stays under its cap.** Hard rules are conventions that change how the agent behaves every single turn. Facts, state and history belong in the store.
